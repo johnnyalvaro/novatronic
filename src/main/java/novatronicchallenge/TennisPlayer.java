@@ -1,5 +1,6 @@
 package novatronicchallenge;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-// @AllArgsConstructor
+@AllArgsConstructor
 public class TennisPlayer {
     private String name;
     private Integer puntaje = 0;
@@ -18,25 +19,4 @@ public class TennisPlayer {
         return true;
     }
 
-   /* public String getMensaje() {
-        String description = "";
-        switch (this.puntaje) {
-            case 0:
-                description = "Love";
-                break;
-            case 1:
-                description = "Fifteen";
-                break;
-            case 2:
-                description = "Thirty";
-                break;
-            case 3:
-                description = "Forty";
-                break;
-            default:
-                description = this.puntaje.toString();
-                break;
-        }
-        return description;
-    }*/
 }
